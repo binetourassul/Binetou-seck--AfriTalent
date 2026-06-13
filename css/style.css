@@ -590,3 +590,103 @@ font-family: var(--font-heading);
     padding: var(--spacing-md) 0;
   }
 }
+
+
+/* ============================
+   DARK MODE
+============================ */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+  background-color: #000 !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .bento-item,
+body.dark-mode .category-card,
+body.dark-mode .accordion-item,
+body.dark-mode .testimonial-card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .bg-light,
+body.dark-mode .bg-white {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .text-muted {
+  color: #aaaaaa !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5 {
+  color: #ffffff;
+}
+
+#darkModeToggle {
+  transition: transform 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  transform: rotate(20deg);
+}
+
+/* ============================
+   NAVBAR DYNAMIQUE AU SCROLL
+============================ */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  background-color: #df3f3f !important;
+}
+
+/* ============================
+   BOUTON RETOUR EN HAUT
+============================ */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-to-top.show {
+  display: flex;
+}
+
+.back-to-top:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-4px);
+}
