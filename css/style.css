@@ -1,0 +1,333 @@
+:root {
+  --color-primary: #FF6B35;     /* Orange africain */
+  --color-secondary: #2A9D8F;   /* Vert turquoise */
+  --color-dark: #1D1D1D;
+  --color-light: #F8F9FA;
+  --color-text: #333333;
+  --color-white: #FFFFFF;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  --radius: 8px;
+}
+
+/* ============================
+   GOOGLE FONTS
+============================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* ============================
+   RESET CSS
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================
+   STYLES DE BASE
+============================ */
+body {
+  font-family: var(--font-body);0O 
+  color: var(--color-text);
+  background-color: var(--color-light);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  color: var(--color-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================
+   NAVBAR
+============================ */
+.navbar {
+  background-color: var(--color-dark) !important;
+  padding: var(--spacing-sm) var(--spacing-lg);
+}
+
+.navbar img {
+  border-radius: 50%;
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-primary) !important;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--color-white) !important;
+  font-weight: 600;
+  margin-left: var(--spacing-md);
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--color-primary) !important;
+}
+
+/* ============================
+   SECTIONS GÉNÉRALES
+============================ */
+section {
+  padding: var(--spacing-lg) 0;
+}
+
+#hero {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  text-align: center;
+}
+
+#hero h1 {
+  color: var(--color-white);
+}
+
+#hero .btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+}
+
+/*  SEc tir page */
+.page-header {
+  text-align: center;
+}
+
+.page-header h1 {
+  color: var(--color-secondary);
+}
+
+/* ============================
+   CARTES FREELANCES
+============================ */
+.card {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  border: 3px solid var(--color-primary);
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.card-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+/* ============================
+   BOUTONS "VOIR LE PROFIL"
+============================ */
+.card .btn {
+  border-radius: var(--radius);
+  font-weight: 600;
+  margin-top: var(--spacing-sm);
+}
+
+
+/* ============================
+   BANNIÈRE TARIFS (HERO SOMBRE)
+============================ */
+.bg-dark.text-white.text-center {
+  background-color: var(--color-dark) !important;
+}
+
+.bg-dark.text-white.text-center h1 {
+  color: var(--color-white);
+}
+
+/* ============================
+   CARTES TARIFS
+============================ */
+.card.h-100.shadow-sm,
+.card.h-100.shadow {
+  border-radius: var(--radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.h-100.shadow-sm:hover,
+.card.h-100.shadow:hover {
+  transform: translateY(-6px);
+}
+
+/* Carte "Pro" mise en avant */
+.card.border-primary {
+  border-width: 2px !important;
+  border-color: var(--color-primary) !important;
+  position: relative;
+}
+
+.card.border-primary .badge.bg-warning {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+}
+
+/* Prix */
+.card h2.display-5 {
+  color: var(--color-secondary);
+  font-family: var(--font-heading);
+}
+
+/* Liste des fonctionnalités */
+.list-group-item {
+  border: none;
+  font-size: 0.9rem;
+}
+
+/* Boutons des cartes */
+.card .btn {
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.btn-outline-primary {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+/* =FAQ ACCORDÉON*/
+.accordion-button {
+  font-family: var(--font-heading);
+  color: var(--color-dark);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--color-primary);
+}
+
+.accordion-item {
+  border-radius: var(--radius) !important;
+  overflow: hidden;
+}
+
+
+/* ============================
+   BANNIÈRE À PROPOS
+============================ */
+.bg-primary.text-white.text-center {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-primary.text-white.text-center h1 {
+  color: var(--color-white);
+}
+
+/* =SEC  HIST= */
+.container h2.fw-bold {
+  font-family: var(--font-heading);
+  color: var(--color-dark);
+}
+
+.container .text-primary.text-uppercase {
+  color: var(--color-secondary) !important;
+  letter-spacing: 1px;
+}
+
+.container img.rounded-4 {
+  border: 4px solid var(--color-light);
+}
+
+/* =SECTION equi= */
+.card.border-0.shadow-sm {
+  border-radius: var(--radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.border-0.shadow-sm:hover {
+  transform: translateY(-6px);
+  box-s }
+
+  /* =
+  form CONTA= */
+.card.border-0.shadow-sm {
+  border-radius: var(--radius);
+}
+
+.card h4.fw-bold {
+  font-family: var(--font-heading);
+  color: var(--color-dark);
+}
+
+.form-label {
+  color: var(--color-text);
+}
+
+.form-control,
+.form-select {
+  border-radius: var(--radius);
+  border: 1px solid #ddd;
+  padding: 0.6rem 0.75rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.15);
+}
+
+.form-check-input:checked {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+
+
