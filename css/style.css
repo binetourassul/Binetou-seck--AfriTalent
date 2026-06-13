@@ -513,3 +513,80 @@ font-family: var(--font-heading);
   background-color: var(--color-primary) !important;
 }
 
+
+
+/* 5 - RESPONSIVE/* Tablette : 768px et moins */
+@media (max-width: 768px) {
+  /* Hero : texte plus petit pour rentrer sur l’écran */
+  #hero h1, .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  #hero p, .hero-text {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  /* Bento grid : 1 colonne sur tablette */
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-large,
+  .bento-wide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* Section Services : cartes moins larges */
+  #services .card {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Section Tarifs : on annule le scale de la carte Pro */
+  .card.border-primary {
+    transform: scale(1);
+  }
+}
+
+/* Mobile : 375px et moins */
+@media (max-width: 375px) {
+  /* Navbar : logo plus petit */
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar {
+    padding: var(--spacing-sm);
+  }
+
+  /* Hero : boutons en colonne et full width */
+  #hero .d-flex {
+    flex-direction: column;
+  }
+  
+  #hero .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  #hero {
+    padding: 2rem 0;
+  }
+
+  /* Témoignages : moins de padding sur mobile */
+  #temoignages .card, .testimonial-card {
+    padding: 1.5rem ;
+  }
+
+  /* Footer : tout centré sur mobile */
+  footer .col-md-3 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  /* Sections : moins de padding sur mobile */
+  section {
+    padding: var(--spacing-md) 0;
+  }
+}
