@@ -615,11 +615,11 @@ body.dark-mode .testimonial-card {
 
 body.dark-mode .bg-light,
 body.dark-mode .bg-white {
-  background-color: #1a1a1a !important;
+  background-color: #1a1a1a ;
 }
 
 body.dark-mode .text-muted {
-  color: #aaaaaa !important;
+  color: #aaaaaa ;
 }
 
 body.dark-mode .form-control,
