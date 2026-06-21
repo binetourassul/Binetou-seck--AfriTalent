@@ -4,7 +4,7 @@
   --color-dark: #1D1D1D;
   --color-light: #F8F9FA;
   --color-text: #333333;
-  --color-white: #FFFFFF;
+  --color-white: #FFFF
 
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Open Sans', sans-serif;
@@ -34,7 +34,7 @@
    STYLES DE BASE
 ============================ */
 body {
-  font-family: var(--font-body);0O 
+  font-family: var(--font-body);
   color: var(--color-text);
   background-color: var(--color-light);
   line-height: 1.6;
@@ -297,7 +297,7 @@ section {
   box-s }
 
   /* =
-  form CONTA= */
+  formULQIRE DE  CONTA= */
 .card.border-0.shadow-sm {
   border-radius: var(--radius);
 }

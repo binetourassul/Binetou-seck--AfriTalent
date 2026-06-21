@@ -1,6 +1,6 @@
-// ============================
+
 // DARK MODE AVEC LOCALSTORAGE
-// ============================
+
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
 
@@ -26,7 +26,7 @@ if (darkModeToggle) {
 
 // ============================
 // NAVBAR + BOUTON RETOUR EN HAUT
-// ============================
+
 const navbar = document.querySelector('.navbar');
 const backToTop = document.getElementById('backToTop');
 
